@@ -1,0 +1,19 @@
+{
+  "name": "2_work_queues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "send": ". ./config/local.sh && nodemon src/send.js",
+    "receive": ". ./config/local.sh && nodemon src/receive.js",
+    "new_task": ". ./config/local.sh && nodemon src/new_task.js",
+    "worker": ". ./config/local.sh && nodemon src/worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0"
+  }
+}
